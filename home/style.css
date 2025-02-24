@@ -1,0 +1,25 @@
+html,
+body {
+    overflow-x: hidden;
+    background-color: #f5f5dc
+}
+
+p {
+    color: #303f9f;
+}
+
+
+.principal {
+    text-align: center;
+    background-color: #f5f5dc
+}
+
+.titulo {
+    color: #303f9f;
+    background-color: #f5f5dc
+}
+
+.texto {
+    color: #616161;
+    background-color: #f5f5dc
+}

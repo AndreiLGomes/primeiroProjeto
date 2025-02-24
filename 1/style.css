@@ -1,0 +1,41 @@
+html,
+body {
+    overflow-x: hidden;
+    background-color: #f5f5dc
+}
+
+
+.footer {
+    text-align: center;
+}
+
+.titulo {
+    color: #303f9f;
+}
+
+.texto {
+    color: #616161;
+}
+
+li {
+    list-style-type: none
+}
+
+.fundo {
+    background-color: #f5f5dc;
+}
+
+.principal {
+    text-align: center;
+    background-color: #f5f5dc
+}
+
+.titulo2 {
+    font-size: 20px;
+    text-align: center;
+    color: #d32f2f;
+}
+
+.direito {
+    color: #d32f2f;
+}
