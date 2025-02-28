@@ -23,3 +23,24 @@ p {
     color: #616161;
     background-color: #f5f5dc
 }
+
+.lista-sem-bolinhas {
+    list-style-type: none;
+    /* Remove as bolinhas */
+    padding-left: 0;
+    /* Remove o recuo padrão */
+    text-align: left;
+    /* Garante o alinhamento à esquerda */
+}
+
+.lista-sem-bolinhas ul {
+    list-style-type: none;
+    /* Remove as bolinhas das sublistas */
+    padding-left: 0;
+    /* Remove o recuo das sublistas */
+}
+
+.card-text.texto {
+    margin-left: 10px;
+    /* Garante o alinhamento sem recuos */
+}
