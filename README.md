@@ -26,24 +26,19 @@ fornecer informações úteis para famílias e profissionais e criar um espaço 
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/AndreiLGomes/primeiroProjeto.git
 ```
 
-2. Navegue até o diretório do projeto:
 
-```bash
-cd seu-repositorio
-```
-
-3. Abra o projeto no Visual Studio Code:
+2. Abra o projeto no Visual Studio Code:
 
 ```bash
 code .
 ```
 
-4. Execute o go live (extensão do Visual Studio Code) 
+3. Execute o go live (extensão do Visual Studio Code) 
 
-5. O site será aberto automaticamente no seu navegador padrão.
+4. O site será aberto automaticamente no seu navegador padrão.
 
 
 
