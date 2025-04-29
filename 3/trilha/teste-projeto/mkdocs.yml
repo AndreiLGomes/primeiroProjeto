@@ -1,0 +1,6 @@
+site_name: 'Minha Documentação Customizada'
+theme:
+  name: 'material'
+nav:
+  - Início: index.md
+  - Sobre: sobre.md
