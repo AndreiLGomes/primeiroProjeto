@@ -1,0 +1,16 @@
+site_name: 'Documentação do Meu Projeto'
+site_description: "Documentação detalhada do projeto"
+site_url: "https://meusiteexemplo.com" 
+theme:
+  name: 'material'
+  palette:
+    scheme: default
+    primary: 'indigo'
+    accent: 'orange'
+nav:
+  - Início: index.md
+  - Sobre: sobre.md
+
+plugins:
+  - search
+  - awesome-pages
