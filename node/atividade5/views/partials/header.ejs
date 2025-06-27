@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= tituloPagina %>
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🌐 Sistema de Usuários</h1>
+
+        <nav>
+            <a href="/">Início</a> |
+            <a href="/usuarios">Usuários</a> |
+            <a href="/cadastrar">Cadastrar</a>
+
+            <% if (typeof menuUsuarios !=='undefined' && menuUsuarios.length> 0) { %>
+                <div style="display:inline-block; margin-left:20px;">
+                    <strong>👥 Usuários:</strong>
+                    <select onchange="alert('Selecionado: ' + this.value)">
+                        <option value="">-- Escolha um usuário --</option>
+                        <% menuUsuarios.forEach(usuario=> { %>
+                            <option value="<%= usuario.nome %>">
+                                <%= usuario.nome %>
+                            </option>
+                            <% }) %>
+                    </select>
+                </div>
+                <% } %>
+        </nav>
+        <hr>
+    </header>

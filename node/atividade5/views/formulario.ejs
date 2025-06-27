@@ -1,0 +1,29 @@
+<%- include('partials/header', { tituloPagina: tituloPagina, menuUsuarios: menuUsuarios }) %>
+
+    <h2>Cadastro</h2>
+
+    <% if (typeof erros !=='undefined' && erros.length> 0) { %>
+        <div style="color: red; text-align: left; max-width: 500px; margin: auto;">
+            <ul>
+                <% erros.forEach(erro=> { %>
+                    <li>
+                        <%= erro %>
+                    </li>
+                    <% }) %>
+            </ul>
+        </div>
+        <% } %>
+
+            <form action="/cadastrar" method="POST">
+                <label>Nome:</label><br>
+                <input type="text" name="nome" value="<%= typeof nomeAntigo !== 'undefined' ? nomeAntigo : '' %>"
+                    required><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email" value="<%= typeof emailAntigo !== 'undefined' ? emailAntigo : '' %>"
+                    required><br><br>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <%- include('partials/footer') %>

@@ -1,0 +1,25 @@
+<!-- cliente.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cliente Socket</title>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+
+<body>
+    <h1>Cliente Socket.IO</h1>
+    <button onclick="enviarMensagem()">Enviar Mensagem</button>
+
+    <script>
+        const socket = io('http://localhost:3001');
+
+        function enviarMensagem() {
+            const mensagem = prompt('Digite uma mensagem:');
+            socket.emit('mensagem', mensagem);
+        }
+    </script>
+</body>
+
+</html>

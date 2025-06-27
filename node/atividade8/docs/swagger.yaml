@@ -1,0 +1,95 @@
+openapi: 3.0.0
+info:
+  title: API de Usuários - Atividade 8
+  version: 1.0.0
+  description: API RESTful para gerenciar usuários com Node.js e Express
+servers:
+  - url: http://localhost:3000
+
+paths:
+  /users:
+    get:
+      summary: Lista todos os usuários (com paginação)
+      parameters:
+        - in: query
+          name: page
+          schema:
+            type: integer
+          description: Página atual
+        - in: query
+          name: limit
+          schema:
+            type: integer
+          description: Quantidade por página
+      responses:
+        '200':
+          description: Lista de usuários
+
+    post:
+      summary: Cria um novo usuário
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Usuario'
+      responses:
+        '201':
+          description: Usuário criado com sucesso
+
+  /users/{id}:
+    put:
+      summary: Atualiza um usuário pelo ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Usuario'
+      responses:
+        '200':
+          description: Usuário atualizado com sucesso
+
+    delete:
+      summary: Deleta um usuário pelo ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Usuário deletado com sucesso
+
+  /users/search:
+    get:
+      summary: Filtra usuários pelo nome
+      parameters:
+        - in: query
+          name: nome
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Lista de usuários filtrados
+
+components:
+  schemas:
+    Usuario:
+      type: object
+      properties:
+        nome:
+          type: string
+        email:
+          type: string
+        role:
+          type: string
+          enum: [admin, user, guest]

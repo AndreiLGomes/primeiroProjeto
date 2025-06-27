@@ -1,0 +1,35 @@
+<!-- cliente-chat.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chat em Tempo Real</title>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+
+<body>
+    <h1> Chat em Tempo Real</h1>
+    <ul id="mensagens"></ul>
+    <input id="mensagem" placeholder="Digite sua mensagem..." autofocus />
+    <button onclick="enviar()">Enviar</button>
+
+    <script>
+        const socket = io('http://localhost:3002');
+
+        socket.on('mensagemChat', (mensagem) => {
+            const li = document.createElement('li');
+            li.textContent = mensagem;
+            document.getElementById('mensagens').appendChild(li);
+        });
+
+        function enviar() {
+            const input = document.getElementById('mensagem');
+            const mensagem = input.value;
+            socket.emit('mensagemChat', mensagem);
+            input.value = '';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+[2025-06-26T23:34:37.666Z] INFO: Servidor iniciado com sucesso.
+[2025-06-26T23:34:37.668Z] WARN: Este é um aviso.
+[2025-06-26T23:34:37.669Z] ERROR: Ocorreu um erro crítico.
+[2025-06-26T23:37:54.697Z] INFO: Aplicação iniciada ✅
+[2025-06-26T23:37:54.699Z] INFO: Divisão bem-sucedida: 10 / 2 = 5
+[2025-06-26T23:37:54.700Z] ERROR: Tentativa de divisão por zero: 5 / 0
+[2025-06-26T23:37:54.700Z] ERROR: Erro capturado: Tentativa de divisão por zero: 5 / 0
+[2025-06-26T23:37:54.747Z] INFO: Iniciando processo principal com Worker...
+[2025-06-26T23:37:54.749Z] INFO: Aplicação finalizada 🛑
+[2025-06-26T23:37:54.861Z] INFO: Post buscado: sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+[2025-06-26T23:37:55.274Z] INFO: ✅ Resultado recebido do worker: 499999999067109000
+[2025-06-26T23:37:55.276Z] INFO: 🧵 Worker finalizado com sucesso.
+[2025-06-26T23:43:33.849Z] INFO: 🧵 Iniciando monitoramento de tarefa paralela com Worker Thread...
+[2025-06-26T23:43:33.880Z] INFO: 🧾 Worker: 📊 Progresso: 0%
+[2025-06-26T23:43:33.943Z] INFO: 🧾 Worker: 📊 Progresso: 20%
+[2025-06-26T23:43:33.967Z] INFO: 🧾 Worker: 📊 Progresso: 40%
+[2025-06-26T23:43:33.989Z] INFO: 🧾 Worker: 📊 Progresso: 60%
+[2025-06-26T23:43:34.010Z] INFO: 🧾 Worker: 📊 Progresso: 80%
+[2025-06-26T23:43:34.032Z] INFO: 🧾 Worker: ✅ Tarefa finalizada. Resultado: 4999999950000000
+[2025-06-26T23:43:34.035Z] INFO: 🧵 Worker finalizado com sucesso!

