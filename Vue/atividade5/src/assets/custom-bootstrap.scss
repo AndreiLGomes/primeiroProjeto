@@ -1,0 +1,8 @@
+// Sobrescreve a cor primária antes de importar o Bootstrap
+$primary: #9C27B0; // roxo, por exemplo
+$card-bg: #f8f9fa;
+$card-border-color: #9C27B0;
+$card-border-width: 2px;
+
+// Importa as variáveis padrão e o restante do Bootstrap
+@import "bootstrap/scss/bootstrap";

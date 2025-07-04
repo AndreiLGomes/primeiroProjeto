@@ -1,0 +1,30 @@
+Beautifully Designed com Vue.js
+O que é?
+Criar interfaces bonitas, funcionais e agradáveis para o usuário.
+No Vue.js, isso significa usar bem os componentes, estilos e feedback visual.
+
+ Boas práticas:
+•	Componentes limpos: cada um com uma função clara
+•	Cores harmônicas: evite exageros, mantenha contraste bom
+•	Tipografia legível: use fontes simples, tamanhos adequados
+•	Botões claros: destaque ações principais com cor
+•	Layout organizado: use flex ou grid para alinhar
+
+Ferramentas úteis:
+•	Tailwind CSS – Estilização rápida com classes
+•	Vuetify – Componentes prontos com Material Design
+•	Bootstrap Vue – Estilo simples com grid e responsividade
+•	<transition> – Animações suaves no Vue
+
+Exemplo prático (Tailwind + Vue):
+
+<template>
+  <div class="p-4 max-w-sm mx-auto bg-white rounded shadow">
+    <h2 class="text-xl font-bold mb-2">Login</h2>
+    <input class="w-full p-2 mb-2 border rounded" placeholder="E-mail" />
+    <input class="w-full p-2 mb-4 border rounded" placeholder="Senha" />
+    <button class="w-full bg-blue-600 text-white p-2 rounded">Entrar</button>
+  </div>
+</template>
+
+
